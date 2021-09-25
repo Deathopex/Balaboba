@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#595959"
+	android:orientation="vertical"
+	android:layout_gravity="center_horizontal">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#595959"
+		android:orientation="vertical">
+
+		<TextView
+			android:text="@string/description"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#FDFF2A"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			android:id="@+id/mainText"
+			android:padding="10dp"
+			android:gravity="top|left"/>
+
+		<EditText
+			android:layout_width="match_parent"
+			android:layout_height="200dp"
+			android:textAlignment="textStart"
+			android:textColor="#FDFF2A"
+			android:background="#757E17"
+			android:alpha="1"
+			android:gravity="top|left"
+			android:id="@+id/inputField"
+			android:paddingLeft="10dp"
+			android:paddingRight="10dp"/>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+			android:layout_gravity="center_horizontal"
+			android:paddingTop="10dp">
+
+			<Button
+				android:text="@string/button_text"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:background="#FDFF2A"
+				android:id="@+id/genButton"/>
+
+			<ImageButton
+				android:src="@drawable/copy"
+				android:layout_width="45dp"
+				android:layout_height="45dp"
+				android:background="#FDFF2A"
+				android:layout_marginLeft="10dp"
+				android:drawablePadding="6dp"
+				android:layout_weight="1.0"
+				android:scaleType="centerInside"
+				android:padding="10dp"
+				android:id="@+id/copyButton"/>
+
+			<ImageButton
+				android:src="@drawable/clear"
+				android:layout_width="45dp"
+				android:layout_height="45dp"
+				android:background="#FDFF2A"
+				android:layout_marginLeft="10dp"
+				android:drawablePadding="6dp"
+				android:layout_weight="1.0"
+				android:scaleType="centerInside"
+				android:padding="10dp"
+				android:id="@+id/clearButton"/>
+
+			<ImageButton
+				android:src="@drawable/share"
+				android:layout_width="45dp"
+				android:layout_height="45dp"
+				android:background="#FDFF2A"
+				android:layout_marginLeft="10dp"
+				android:drawablePadding="6dp"
+				android:layout_weight="1.0"
+				android:scaleType="centerInside"
+				android:padding="10dp"
+				android:id="@+id/shareButton"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<ProgressBar
+		android:layout_width="wrap_content"
+		style="@drawable/progressbar"
+		android:layout_height="wrap_content"
+		android:translationY="0dp"
+		android:translationZ="90dp"
+		android:id="@+id/loading"
+		android:indeterminateDrawable="@drawable/progressbar"
+		android:visibility="gone"/>
+
+</AbsoluteLayout>
+
