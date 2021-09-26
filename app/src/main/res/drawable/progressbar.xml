@@ -4,7 +4,6 @@
 	android:pivotY="50%" 
 	android:fromDegrees="0"
 	android:toDegrees="360">
-
     <shape 
         android:shape="ring" 
         android:innerRadiusRatio="3"
@@ -21,7 +20,6 @@
 			android:startColor="#FDFF2A" 
 			android:endColor="#757E17"
 			android:angle="0"/>
-
     </shape>
 
 </rotate> 

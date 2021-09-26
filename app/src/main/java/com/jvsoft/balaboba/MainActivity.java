@@ -104,11 +104,7 @@ public class MainActivity extends Activity {
 						    loading.setVisibility(View.GONE);
 							int [] location = new int[2];
 							MainActivity.input.getLocationOnScreen(location);
-							int x = location[0];
 							int y = location[1];
-							int height = MainActivity.input.getHeight();
-							int width = MainActivity.context.getDisplay().getWidth();
-							loading.setTranslationX(width / 2 - 75);
 							loading.setTranslationY(y);
 						  }
 					  });

@@ -29,12 +29,14 @@
 			android:layout_height="200dp"
 			android:textAlignment="textStart"
 			android:textColor="#FDFF2A"
-			android:background="#757E17"
 			android:alpha="1"
 			android:gravity="top|left"
 			android:id="@+id/inputField"
+			android:background="@drawable/border"
 			android:paddingLeft="10dp"
-			android:paddingRight="10dp"/>
+			android:paddingRight="10dp"
+			android:paddingTop="2dp"
+			android:paddingBottom="2dp"/>
 
 		<LinearLayout
 			android:orientation="horizontal"
@@ -89,17 +91,29 @@
 
 		</LinearLayout>
 
+		<ScrollView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+
 	</LinearLayout>
 
-	<ProgressBar
-		android:layout_width="wrap_content"
-		style="@drawable/progressbar"
-		android:layout_height="wrap_content"
-		android:translationY="0dp"
-		android:translationZ="90dp"
-		android:id="@+id/loading"
-		android:indeterminateDrawable="@drawable/progressbar"
-		android:visibility="gone"/>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center_horizontal">
+
+		<ProgressBar
+			android:layout_width="wrap_content"
+			style="@drawable/progressbar"
+			android:layout_height="wrap_content"
+			android:translationY="0dp"
+			android:translationZ="30dp"
+			android:id="@+id/loading"
+			android:indeterminateDrawable="@drawable/progressbar"
+			android:visibility="invisible"/>
+
+	</LinearLayout>
 
 </AbsoluteLayout>
 
